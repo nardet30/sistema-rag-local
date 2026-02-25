@@ -1,75 +1,75 @@
-# 🤖 Local RAG AI - Your Private Manual Consultant
+# 🤖 Local RAG AI - Tu Consultor Privado de Manuales
 
 [![Ollama](https://img.shields.io/badge/LLM-Ollama-blue.svg)](https://ollama.com/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-green.svg)](https://www.python.org/)
-[![UI](https://img.shields.io/badge/UI-Glassmorphism-purple.svg)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Interfaz](https://img.shields.io/badge/Interfaz-Glassmorphism-purple.svg)](#)
+[![Licencia: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A high-performance, **100% private**, and local Retrieval-Augmented Generation (RAG) system. Chat with your technical manuals (PDFs) without an internet connection using state-of-the-art open-source models.
+Un sistema de Generación Aumentada por Recuperación (RAG) de alto rendimiento, **100% privado** y local. Chatea con tus manuales técnicos (PDFs) sin necesidad de conexión a internet, utilizando modelos de código abierto de última generación.
 
-![Project Preview](https://via.placeholder.com/800x450.png?text=Local+RAG+Interface+Preview)
+![Previsualización del Proyecto](https://via.placeholder.com/800x450.png?text=Interfaz+RAG+Local+Preview)
 
-## ✨ Features
+## ✨ Características
 
-- 🔒 **Total Privacy**: Everything runs on your machine. No data leaves your network.
-- ⚡ **AI Models**: Powered by **Llama 3.2** (Intelligence) and **Nomic Embed Text** (Context).
-- 🎨 **Premium UI**: Modern glassmorphism interface with dark mode and smooth animations.
-- 📂 **Multi-PDF Support**: Upload and index multiple manuals simultaneously.
-- 📍 **Source Transparency**: Precise citations of where information was found in the documents.
-- 🏗️ **Smart Chunking**: Advanced text splitting for accurate information retrieval.
+- 🔒 **Privacidad Total**: Todo se ejecuta en tu máquina. Ningún dato sale de tu red local.
+- ⚡ **Modelos IA**: Potenciado por **Llama 3.2** (Inteligencia) y **Nomic Embed Text** (Contexto).
+- 🎨 **Interfaz Premium**: Diseño moderno con efecto "Glassmorphism", modo oscuro y animaciones fluidas.
+- 📂 **Gestión de Documentos**: Sube y re-indexa múltiples manuales PDF directamente desde la web.
+- 📍 **Transparencia en Fuentes**: Citas precisas de los documentos y páginas donde se encontró la información.
+- 🏗️ **Fragmentación Inteligente**: Procesamiento avanzado de texto para una recuperación de información exacta.
 
-## 🛠️ Tech Stack
+## 🛠️ Tecnologías
 
 - **Backend**: FastAPI (Python)
 - **Frontend**: HTML5, Tailwind CSS, Lucide Icons
-- **RAG Framework**: LangChain
-- **Vector Database**: ChromaDB
-- **LLM Engine**: Ollama
+- **Framework RAG**: LangChain
+- **Base de Datos Vectorial**: ChromaDB
+- **Motor LLM**: Ollama
 
-## 🚀 Getting Started
+## 🚀 Primeros Pasos
 
-### 1. Prerequisites
-- Install [Ollama](https://ollama.com/)
-- Download required models:
+### 1. Requisitos previos
+- Instala [Ollama](https://ollama.com/)
+- Descarga los modelos necesarios:
   ```bash
   ollama pull llama3.2
   ollama pull nomic-embed-text
   ```
 
-### 2. Installation
-Clone the repository and install dependencies:
+### 2. Instalación
+Clona el repositorio e instala las dependencias:
 ```bash
 git clone https://github.com/nardet30/sistema-rag-local.git
 cd sistema-rag-local
 pip install -r requirements.txt
 ```
 
-### 3. Usage
-1. Place your PDF manuals in the `data/` folder.
-2. Run the application:
+### 3. Uso
+1. Inicia el servidor:
    ```bash
    python app.py
    ```
-3. Open your browser at [http://localhost:8000](http://localhost:8000).
+2. Abre tu navegador en [http://localhost:8000](http://localhost:8000).
+3. Sube tus manuales PDF a través de la interfaz y pulsa el botón de **Re-indexar**.
 
-## 📂 Project Structure
+## 📂 Estructura del Proyecto
 
 ```text
-├── app.py             # FastAPI Server & API Endpoints
+├── app.py             # Servidor FastAPI y Endpoints de la API
 ├── src/
-│   ├── rag_engine.py  # Core Logic: Embedding, Retrieval & LLM Chain
-│   └── config.py      # System Configurations
+│   ├── rag_engine.py  # Lógica Central: Embeddings, Recuperación y Cadena LLM
+│   └── config.py      # Configuraciones del Sistema
 ├── templates/
-│   └── index.html     # Premium Web Interface
-├── data/              # Put your PDFs here
-└── vector_db_local/   # Persistent local vector storage
+│   └── index.html     # Interfaz Web Premium
+├── data/              # Carpeta de almacenamiento de tus PDFs
+└── vector_db_local/   # Almacenamiento persistente de la base de datos vectorial
 ```
 
-## 🌐 GitHub Pages (Preview)
-Check out the [Landing Page](https://nardet30.github.io/sistema-rag-local/) to see the interface design and features.
+## 🌐 GitHub Pages (Presentación)
+Visita nuestra [Landing Page](https://nardet30.github.io/sistema-rag-local/) para ver el diseño de la interfaz y sus capacidades.
 
-## 🤝 Contributing
-Feel free to open issues or submit pull requests. All contributions that improve speed or UX are welcome!
+## 🤝 Contribuciones
+Siéntete libre de abrir issues o enviar pull requests. ¡Cualquier mejora en velocidad o experiencia de usuario es bienvenida!
 
 ---
-Developed with ❤️ by [nardet](https://github.com/nardet30)
+Desarrollado con ❤️ por [nardet](https://github.com/nardet30)
